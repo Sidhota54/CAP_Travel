@@ -1,0 +1,45 @@
+@baseurl="http://localhost:4004/odata/v4";
+
+# GET {{baseurl}}/order-managment/Orders
+
+# GET {{baseurl}}/order-managment/OrderItems 
+
+# GET http://localhost:4004/odata/v4/order-managment/OrderItems
+
+# GET http://localhost:4004/odata/v4/order-managment/Orders?$search=CUST
+
+# GET http://localhost:4004/odata/v4/restricted/Orders?$expand=items
+# Authorization: Basic admin
+
+# GET http://localhost:4004/odata/v4/order-managment/Orders?$expand=items
+# Authorization: Basic xxx
+# Accept-Language: fr
+
+
+# GET http://localhost:4004/api/customlogic/Orders
+
+
+
+
+# Authorization: bearer xxx
+
+
+# Authorization: bearer eyJqa3UiOiJodHRwczovL3VhYS5jZi51czEwLTAwMS5oYW5hLm9uZGVtYW5kLmNvbS90b2tlbl9rZXlzIiwia2lkIjoia2V5LTEiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5YThmYzMxOS02Y2U3LTQ2MzctYjZjNy0xOGI5ZDk4NDg1MWIiLCJ1c2VyX25hbWUiOiJzaWRkaGFydGguaG90YUBpbmN0dXJlLmNvbSIsIm9yaWdpbiI6InNhcC5pZHMiLCJpc3MiOiJodHRwczovL3VhYS5jZi51czEwLTAwMS5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aC90b2tlbiIsImNsaWVudF9pZCI6ImNmIiwiYXVkIjpbImNsb3VkX2NvbnRyb2xsZXIiLCJwYXNzd29yZCIsImNmIiwidWFhIiwib3BlbmlkIl0sInppZCI6InVhYSIsImdyYW50X3R5cGUiOiJwYXNzd29yZCIsInVzZXJfaWQiOiI5YThmYzMxOS02Y2U3LTQ2MzctYjZjNy0xOGI5ZDk4NDg1MWIiLCJhenAiOiJjZiIsInNjb3BlIjpbIm9wZW5pZCIsInVhYS51c2VyIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwicGFzc3dvcmQud3JpdGUiLCJjbG91ZF9jb250cm9sbGVyLndyaXRlIl0sImV4cCI6MTc0NTI0NDA3MCwiaWF0IjoxNzQ1MjQyODcwLCJqdGkiOiI4YjM1ODQyY2FiMWI0MGQzYmY3MjI4ZDE2M2NhNWU4MiIsImVtYWlsIjoic2lkZGhhcnRoLmhvdGFAaW5jdHVyZS5jb20iLCJyZXZfc2lnIjoiMjc0MzVjNzkiLCJjbGllbnRfYXV0aF9tZXRob2QiOiJub25lIiwiY2lkIjoiY2YifQ.SCb3OYGGD5XoG6qOKKoAuazXuJcwS1v0-UgmFCRFLZbqVxov4hhhm8SukFdXUzdFNgCzmyk8rz9Df7BnD8YHKq0x4Fhu5GMk8CUawL9v49Gk8cfVZDBPX9a8yRH0sHFGZx8DHH8DrDn_gpVLHBvD83ZoISug05n_oKktRapP9oG9oLQF9kZ0IfKkCD0LcbOBK1nnJx2x_PiR2QKByy_F4mS-u2H_xyxrXbvJ5Tr_s4l8uQW7F_Aml2fMUZf8UKdRbTkK1eviouAV8iyww0kC5g6Q7kbvRpppPHJsHcxb3aRdYVu-jUKmrWrBCVlxSzbRwr0LaVjUvr3ptOUHdca6Ow
+
+# POST http://localhost:4004/api/customlogic/Orders
+# Content-Type: application/json
+
+# {
+#     "customerID": "CUST003",
+#     "orderDate": "2025-04-03T09:10:00Z",
+#     "totalAmount": 0.0
+# }
+
+
+
+GET http://localhost:4004/api/customlogic/placeBulkOrders
+Content-Type: application/json
+
+{
+   "quantity": 5
+}
