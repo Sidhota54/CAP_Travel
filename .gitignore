@@ -7,6 +7,7 @@ default-*.json
 .cdsrc-private.json
 gen/
 node_modules/
+dist/
 target/
 
 # Web IDE, App Studio
@@ -32,3 +33,8 @@ mta_archives/
 
 # @cap-js/cds-typer
 @cds-models
+
+# auto generated wildcard
+db/.env
+# auto generated wildcard
+.env
